@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>video-clr</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="video-clr" fill="#73C1C7">
+            <g id="no_video-copy" transform="translate(8.000000, 25.000000)">
+                <path d="M8.14763496,0 L52.9596272,0 C57.4408264,0 61.1072622,3.67784257 61.1072622,8.17298348 L61.1072622,40.8649174 C61.1072622,45.3600583 57.4408264,49.0379009 52.9596272,49.0379009 L8.14763496,49.0379009 C3.66643573,49.0379009 0,45.3600583 0,40.8649174 L0,8.17298348 C0,3.67784257 3.66643573,0 8.14763496,0 L8.14763496,0 Z" id="Shape"></path>
+                <path d="M81.4763496,46.994655 L61.1072622,34.7351798 L61.1072622,14.3027211 L81.4763496,2.04324587 L81.4763496,46.994655 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

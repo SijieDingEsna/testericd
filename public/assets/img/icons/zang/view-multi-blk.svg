@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>view-multi-blk</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="65" height="46" rx="3.14999986"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="65" height="46" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Icons/Font" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="view-multi-blk" stroke="#000000">
+            <g id="Group-17" transform="translate(18.000000, 27.000000)">
+                <path d="M31.0532258,46 L31.0532258,6.81607339e-13" id="Path-2314" stroke-width="3.40199991" fill="#D8D8D8"></path>
+                <use id="Rectangle-1530" mask="url(#mask-2)" stroke-width="6.80399983" xlink:href="#path-1"></use>
+                <path d="M32.5,22.6027273 L62.96875,22.6027273" id="Path-2314" stroke-width="3.40199991" fill="#D8D8D8"></path>
+            </g>
+        </g>
+    </g>
+</svg>

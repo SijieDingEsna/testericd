@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>camera-grey</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="camera-grey" stroke="#8E8E8E" stroke-width="3">
+            <path d="M62.605042,28.6551404 L37.6470588,28.9074768 L40.3999999,24.3373832 C40.9999999,23.4457944 41.8999999,23 42.9499999,23 L57.3499999,23 C58.3999999,23 59.2999999,23.4457944 59.8999999,24.3373832 L62.605042,28.6551404 Z" id="Shape"></path>
+            <path d="M26,76.6074766 C22.7,76.6074766 20,73.9327103 20,70.6635513 L20,35 C20,31.7308411 22.7,29.0560748 26,29.0560748 L74,29.0560748 C77.3,29.0560748 80,31.7308411 80,35 L80,70.6635513 C80,73.9327103 77.3,76.6074766 74,76.6074766 L26,76.6074766 L26,76.6074766 Z" id="Shape"></path>
+            <ellipse id="Combined-Shape" cx="49.9562391" cy="54.8504673" rx="14.8301887" ry="14.6915888"></ellipse>
+            <path d="M20.5042017,37.635514 L30.8403361,37.635514" id="Path-169"></path>
+            <path d="M20.5042017,45.2056075 L30.8403361,45.2056075" id="Path-169"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>audio-off-red</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ICONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="audio-off-red" stroke="#FF3D2E">
+            <path d="M60.5194153,26.4418851 C60.5194153,22.3327591 56.7347778,19 52.0673141,19 C47.3998503,19 43.6177717,22.3327591 43.6177717,26.4418851 L43.6177717,52.2714068 C43.6177717,56.3805328 47.3998503,59.713292 52.0673141,59.713292 C56.7347778,59.713292 60.5194153,56.3805328 60.5194153,52.2714068 L60.5194153,26.4418851 L60.5194153,26.4418851 Z" id="Stroke-1" stroke-width="3.24" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M31,51.4984107 C31,51.4984107 32.1310411,69.3752796 51.3715344,69.3752796 C70.6120277,69.3752796 71.7430688,51.4984107 71.7430688,51.4984107" id="Stroke-3" stroke-width="3.24" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M52,69.5530833 L52,77.6819509" id="Stroke-5" stroke-width="3.24" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M80.288441,19.8974678 L18.7966192,81.0307743" id="Line" stroke-width="3.0375" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

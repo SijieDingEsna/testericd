@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>audio-on-blk</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons/Font" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="audio-on-blk">
+            <g id="Group-6" transform="translate(31.000000, 19.000000)" stroke-linecap="round" stroke-width="3.24" stroke="#000000" stroke-linejoin="round">
+                <g id="Group-7">
+                    <path d="M29.5194153,7.44188513 C29.5194153,3.33275913 25.7347778,0 21.0673141,0 C16.3998503,0 12.6177717,3.33275913 12.6177717,7.44188513 L12.6177717,33.2714068 C12.6177717,37.3805328 16.3998503,40.713292 21.0673141,40.713292 C25.7347778,40.713292 29.5194153,37.3805328 29.5194153,33.2714068 L29.5194153,7.44188513 L29.5194153,7.44188513 Z" id="Stroke-1"></path>
+                    <g id="Group-39" transform="translate(0.000000, 32.498411)">
+                        <path d="M0,0 C0,0 1.1310411,17.8768689 20.3715344,17.8768689 C39.6120277,17.8768689 40.7430688,0 40.7430688,0" id="Stroke-3"></path>
+                        <path d="M21,18.0546726 L21,26.1835403" id="Stroke-5"></path>
+                    </g>
+                </g>
+            </g>
+            <path d="M80.288441,19.8974678 L18.7966192,81.0307743" id="Line"></path>
+        </g>
+    </g>
+</svg>

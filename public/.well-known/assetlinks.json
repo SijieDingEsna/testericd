@@ -1,0 +1,18 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "io.zang.spaces",
+    "sha256_cert_fingerprints":
+    ["3E:8E:DD:11:20:31:94:15:22:E4:12:89:5F:77:65:6D:BF:CE:B5:D6:5B:2A:C6:B4:78:EC:7E:70:BF:C8:13:FE"]
+  }
+  },
+  {
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "io.zang.spaces",
+    "sha256_cert_fingerprints":
+    ["08:AB:A7:AA:B4:19:96:0A:66:13:E9:9E:C5:7C:4F:D1:08:F8:23:9E:35:D0:CC:91:49:C2:57:ED:36:87:CB:56"]
+  }
+}]

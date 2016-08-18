@@ -1,0 +1,16 @@
+{
+ "webcredentials": {
+  "apps": [
+    "L2QY5R9MED.com.esna.Logan"
+  ]
+ },
+ "applinks": {
+  "apps": [],
+  "details": [
+   {
+     "appID": "L2QY5R9MED.com.esna.Logan",
+     "paths": [ "/spaces/invites/*/join" ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-left-blk</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons/Font" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-left-blk" fill="#000000">
+            <path d="M58.4936387,76.4768133 L38.9109415,57.1189061 C36.7938931,55.0261593 36,52.4102259 36,49.5326992 C36,46.6551724 37.3231552,44.039239 38.9109415,41.9464923 L58.4936387,22.588585 C59.2875318,21.803805 60.610687,21.803805 61.4045802,22.588585 C62.1984733,23.373365 62.1984733,24.6813317 61.4045802,25.4661118 L41.821883,44.824019 C39.1755725,47.4399524 39.1755725,51.1022592 41.821883,53.7181926 L61.4045802,73.0760999 C62.1984733,73.8608799 62.1984733,75.1688466 61.4045802,75.9536266 C61.4045802,77 60.610687,77 60.0814249,77 C59.5521628,77 58.7582697,77 58.4936387,76.4768133 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

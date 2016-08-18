@@ -1,0 +1,1110 @@
+/*! zang Viewer - v0.10.11 | (c) 2016 zang.io */
+.zang-viewer {
+    padding: 0;
+    position: relative
+}
+
+.zang-viewer * {
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+		transition: all .16s ease-in-out;
+}
+
+.zang-viewer-fullscreen {
+    /*background: #000;*/
+    overflow: auto;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: 100%*/
+}
+
+
+
+.zang-viewport {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    /*overflow: auto;*/
+    /*-webkit-overflow-scrolling: touch;*/
+    outline: 0 !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.zang-draggable .zang-viewport {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab
+}
+
+.zang-dragging .zang-viewport {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: grabbing
+}
+
+.zang-doc {
+    /*overflow: auto;*/
+    position: relative;
+    text-align: center;
+    font-size: 100%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.zang-window-as-viewport .zang-viewport {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    /*overflow: hidden;*/
+    width: auto;
+    height: auto;
+}
+
+.zang-window-as-viewport .zang-doc {
+    width: auto;
+    height: auto;
+    /*overflow: hidden*/
+}
+
+.zang-page {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-align: left;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.zang-page-inner {
+    position: relative;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    margin: 0 !important;
+    padding: 0 !important
+}
+
+.zang-page-content {
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.zang-page-content object{
+	width:100%;
+}
+
+
+.zang-page-visible, .zang-current-page {
+    visibility: visible !important
+}
+
+
+.zang-page-svg object, .zang-page-svg iframe, .zang-page-svg img, .zang-page-svg-img, .zang-page-svg-loader {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 0;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.zang-page-svg-img {
+    display: none;
+}
+
+
+.zang-page-svg-loader {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.zang-page-svg-loader .loader-img {
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 60px);
+}
+
+.zang-page-autoscale {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0
+}
+
+.zang-page-autoscale > div {
+    display: block;
+    position: absolute
+}
+
+.zang-page-svg {
+    position: absolute;
+    /*overflow: hidden;*/
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+    width: auto;
+    height: auto
+}
+
+.zang-page-links {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.zang-page-link {
+    position: absolute;
+    display: block
+}
+
+.zang-page-link span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==) 0 0 no-repeat
+}
+
+.zang-links-disabled .zang-page-links {
+    display: none
+}
+
+.zang-links-disabled .zang-page-link {
+    background: transparent
+}
+
+.zang-page-text {
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: .5;
+    /*overflow: hidden*/
+}
+
+.zang-page-visible .zang-page-text, .zang-page-selected .zang-page-text {
+    display: block !important
+}
+
+.zang-draggable .zang-page-text, .zang-text-disabled .zang-page-text {
+    display: none !important
+}
+
+.zang-page-error .zang-page-text, .zang-page-loading .zang-page-text, .zang-page-error .zang-page-svg, .zang-page-loading .zang-page-svg, .zang-page-error .zang-page-links, .zang-page-loading .zang-page-links {
+    display: none !important
+}
+
+.zang-subpx-fix {
+    zoom: 10;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    width: 1000%;
+    height: 1000%
+}
+
+.zang-layout-horizontal .zang-doc {
+    text-align: left;
+    white-space: nowrap
+}
+
+.zang-layout-vertical-single-column .zang-page {
+    /*display: block;*/
+    margin: 0 auto
+}
+
+.zang-layout-presentation-two-page .zang-page, .zang-layout-presentation .zang-page {
+    position: absolute;
+    visibility: hidden;
+    display: block
+}
+
+.zang-layout-presentation-two-page .zang-doc, .zang-layout-presentation .zang-doc {
+    /*overflow: visible;*/
+    text-align: left
+}
+
+.zang-layout-presentation-two-page .zang-page:nth-child(odd) {
+    padding-right: 0 !important
+}
+
+.zang-layout-presentation-two-page .zang-page:nth-child(even) {
+    padding-left: 0 !important
+}
+
+.zang-layout-presentation-two-page .zang-page-visible, .zang-layout-presentation .zang-page-visible {
+    z-index: 1
+}
+
+.zang-layout-presentation .zang-viewport, .zang-layout-presentation-two-page .zang-viewport {
+    /*overflow: hidden*/
+}
+
+.zang-layout-presentation.zang-scrollable .zang-viewport, .zang-layout-presentation-two-page.zang-scrollable .zang-viewport {
+    /*overflow: auto*/
+}
+
+.zang-viewer[data-svg-version^="0"] .zang-page-text .tx {
+    color: transparent !important
+}
+
+.zang-viewport {
+    background: transparent
+}
+
+.zang-page-content {
+    border: 0;
+    background: #fff;
+}
+
+.zang-page {
+    padding: 10px 15px
+}
+
+.zang-page-text {
+    opacity: .4
+}
+
+.zang-page-text ::-moz-selection {
+    background: rgba(50, 151, 253, 0.75) !important
+}
+
+.zang-page-text ::selection {
+    background: rgba(50, 151, 253, 0.75) !important
+}
+
+.zang-text-disabled .zang-text {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.zang-doc.zang-text {
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    text-align: left;
+    counter-reset: line-numbering;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 10pt;
+    background: #fff;
+    min-height: 100%;
+    width: 100%;
+    tab-size: 8;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.zang-text tr:last-child {
+    height: 100%
+}
+
+.zang-text tr:first-child td {
+    padding-top: .3em
+}
+
+.zang-text tr:last-child td {
+    padding-bottom: .3em
+}
+
+.zang-text td:first-child {
+    width: 1%;
+    padding-left: .5em;
+    padding-right: .3em;
+    vertical-align: top;
+    text-align: right;
+    color: #aaa;
+    background: #f8f8f8;
+    border-right: 1px solid #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important
+}
+
+.zang-text td:first-child:before {
+    content: counter(line-numbering);
+    counter-increment: line-numbering
+}
+
+.zang-text td:last-child {
+    vertical-align: top;
+    text-align: left;
+    margin: 0;
+    /*overflow: hidden;*/
+    position: relative;
+    padding: 0 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: #333;
+    vertical-align: top
+}
+
+.zang-fullscreen {
+    width: 100%;
+    height: 100%
+}
+
+.zang-fakefullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body.basic-viewport, body.basic-viewport .container {
+    height: 100%;
+    width: 100%
+}
+
+body.basic-viewport .viewer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    position: absolute
+}
+
+.controls-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s
+}
+
+body.scrolling .controls-container {
+    -webkit-transition: -webkit-transform .1s;
+    transition: transform .1s;
+    -webkit-transform: translate(0px, -45px);
+    transform: translate(0px, -45px)
+}
+
+body.top .controls-container {
+    -webkit-transition: -webkit-transform .1s;
+    transition: transform .1s;
+    -webkit-transform: none;
+    transform: none
+}
+
+.container {
+    position: relative
+}
+
+.viewer, .viewer-error {
+    top: 0;
+}
+
+.viewer-error {
+    display: none;
+    color: #333;
+    text-align: center;
+    font-size: 100%
+}
+
+body.fail, body.fail .container {
+    height: 100%
+}
+
+body.fail .viewer-error {
+    bottom: 0;
+    display: block
+}
+
+body.fail .viewer, body.fail .controls-center, body.fail .controls-right {
+    display: none
+}
+
+.viewer-error .message {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 96px
+}
+
+.viewer-error .message {
+    padding-top: 80px;
+    height: 140px;
+    background: url("../img/error-icon.png") top center no-repeat
+}
+
+.error-404 .viewer-error .message {
+    padding-top: 80px;
+    height: 140px;
+    background: url("../img/404-icon.png") top center no-repeat
+}
+
+.viewer-error h2 {
+    font-size: 16pt;
+    font-weight: bold
+}
+
+.viewer-error a {
+    font-size: 14pt;
+    margin: .5em 0;
+    color: #333
+}
+
+.viewer-error p {
+    font-size: 12pt;
+    margin: 0;
+    color: #aaa
+}
+
+.controls {
+    display: none
+}
+
+body.ready .controls {
+    display: inline-block
+}
+
+.controls-left {
+    display: block;
+    position: absolute;
+    left: 0
+}
+
+.controls-right {
+    position: absolute;
+    right: 0
+}
+
+.controls .btn {
+    border: 0;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    cursor: pointer
+}
+
+.controls .page {
+    display: inline-block;
+    position: relative;
+    vertical-align: top
+}
+
+.controls .page-display {
+    width: auto;
+    background: transparent;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 10pt;
+    line-height: 0;
+    margin: 0 5px 0;
+    vertical-align: middle;
+    text-align: center
+}
+
+.controls .page-input {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    top: 11px;
+    left: 0;
+    display: none;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 10pt;
+    text-align: center;
+    vertical-align: middle
+}
+
+.controls .page-input:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+    box-shadow: #ccc 0 0 1px inset
+}
+
+.controls .btn, .controls .logo {
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    margin: 7px 5px 0
+}
+
+.controls .icon {
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+.controls .btn .icon {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0
+}
+
+.controls .btn {
+    cursor: pointer
+}
+
+.controls .btn:disabled {
+    cursor: default
+}
+
+.logo {
+    display: inline-block;
+    width: 40px;
+    height: 30px
+}
+
+.zang-doc {
+    background-color: rgba(255,255,255,.001);
+}
+
+.zang-page-inner {
+    border: 1px solid #f0f0f0;
+    box-shadow: 1px 1px 4px rgba(120, 120, 120, 0.5)
+}
+
+.zang-page-visible.zang-page-loading .zang-page-content {
+    background: #fff url("../img/spinner.gif") center center no-repeat
+}
+
+
+.zang-viewer-fullscreen .fullscreen-btn {
+    display: none;
+}
+
+@media only screen and (max-width: 400px) {
+    .controls-right .btn {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .controls-center .scroll-previous-btn, .controls-center .scroll-next-btn, .controls-right .zoom-in-btn, .controls-right .zoom-out-btn, .controls-right .fullscreen-btn {
+        display: none
+    }
+}
+
+.theme-light .controls-container {
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #d9d9d9;
+    background: #fff
+}
+
+.theme-light .page-display, .theme-light .page-input {
+    color: #333
+}
+
+.theme-light .icon {
+    opacity: .7;
+    -ms-filter: "alpha(opacity=70)"
+}
+
+.theme-light .btn:focus {
+    outline: 0
+}
+
+.theme-light .btn:hover .icon {
+    opacity: 1;
+    -ms-filter: "alpha(opacity=100)"
+}
+
+.theme-light .logo {
+    background-image: url("../img/zang-red.svg")
+}
+
+.theme-light .download-btn .icon {
+    background-image: url("../img/download.png")
+}
+
+.theme-light .scroll-previous-btn .icon {
+    background-image: url("../img/arrow_up.png")
+}
+
+.theme-light .scroll-next-btn .icon {
+    background-image: url("../img/arrow_down.png")
+}
+
+.theme-light .zoom-in-btn .icon {
+    background-image: url("../img/zoomin.png");
+    background-position: -2px -2px
+}
+
+.theme-light .zoom-out-btn .icon {
+    background-image: url("../img/zoomout.png");
+    background-position: -2px -2px
+}
+
+.theme-light .fullscreen-btn .icon {
+    background-image: url("../img/fullscreen.png");
+    background-position: -1px -2px
+}
+
+.theme-light .controls .btn:disabled .icon {
+    opacity: .2;
+    -ms-filter: "alpha(opacity=20)"
+}
+
+.theme-dark .controls-container {
+    height: 45px;
+    line-height: 45px;
+    background: #333
+}
+
+.theme-dark .page-display {
+    color: #fff
+}
+
+.theme-dark .page-input {
+    color: #333
+}
+
+.theme-dark .icon {
+    opacity: .7;
+    -ms-filter: "alpha(opacity=70)"
+}
+
+.theme-dark .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 1px #eee
+}
+
+.theme-dark .btn:hover .icon {
+    opacity: 1;
+    -ms-filter: "alpha(opacity=100)"
+}
+
+.theme-dark .logo {
+    background-image: url("../img/zang-white.png")
+}
+
+.theme-dark .download-btn .icon {
+    background-image: url("../img/download-white.png")
+}
+
+.theme-dark .scroll-previous-btn .icon {
+    background-image: url("../img/arrow_up_white.png")
+}
+
+.theme-dark .scroll-next-btn .icon {
+    background-image: url("../img/arrow_down_white.png")
+}
+
+.theme-dark .zoom-in-btn .icon {
+    background-image: url("../img/zoomin_white.png");
+    background-position: -2px -2px
+}
+
+.theme-dark .zoom-out-btn .icon {
+    background-image: url("../img/zoomout_white.png");
+    background-position: -2px -2px
+}
+
+.theme-dark .fullscreen-btn .icon {
+    background-image: url("../img/fullscreen_white.png");
+    background-position: -1px -2px
+}
+
+.theme-dark .controls .btn:disabled .icon {
+    opacity: .2;
+    -ms-filter: "alpha(opacity=20)"
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .theme-light .logo {
+        background-image: url("../img/zang-red.svg");
+        background-size: 32px 32px
+    }
+
+    .theme-light .download-btn .icon {
+        background-image: url("../img/download-2x.png")
+    }
+
+    .theme-light .scroll-previous-btn .icon {
+        background-image: url("../img/arrow_upx2.png")
+    }
+
+    .theme-light .scroll-next-btn .icon {
+        background-image: url("../img/arrow_down2x.png")
+    }
+
+    .theme-light .zoom-in-btn .icon {
+        background-image: url("../img/zoomin2x.png");
+        background-position: -2px -2px
+    }
+
+    .theme-light .zoom-out-btn .icon {
+        background-image: url("../img/zoomout2x.png");
+        background-position: -2px -2px
+    }
+
+    .theme-light .fullscreen-btn .icon {
+        background-image: url("../img/fullscreen2x.png");
+        background-position: -1px -2px
+    }
+
+    .theme-dark .logo {
+        background-image: url("../img/zang-white2x.svg");
+        background-size: 32px 32px
+    }
+
+    .theme-dark .download-btn .icon {
+        background-image: url("../img/download-white2x.png")
+    }
+
+    .theme-dark .scroll-previous-btn .icon {
+        background-image: url("../img/arrow_up_white2x.png")
+    }
+
+    .theme-dark .scroll-next-btn .icon {
+        background-image: url("../img/arrow_down_white2x.png")
+    }
+
+    .theme-dark .zoom-in-btn .icon {
+        background-image: url("../img/zoomin_white2x.png");
+        background-position: -2px -2px
+    }
+
+    .theme-dark .zoom-out-btn .icon {
+        background-image: url("../img/zoomout_white2x.png");
+        background-position: -2px -2px
+    }
+
+    .theme-dark .fullscreen-btn .icon {
+        background-image: url("../img/fullscreen_white2x.png");
+        background-position: -1px -2px
+    }
+
+    .icon {
+        background-size: 32px 32px
+    }
+
+    .viewer-error .message {
+        background: url("../img/error-icon2x.png") top center no-repeat;
+        background-size: 56px auto
+    }
+
+    .error-404 .viewer-error .message {
+        background: url("../img/404-icon2x.png") top center no-repeat;
+        background-size: 64px auto
+    }
+}
+
+.hll {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 3px
+}
+
+.c {
+    color: #998;
+    font-style: italic
+}
+
+.err {
+    color: #a61717
+}
+
+.k {
+    font-weight: bold
+}
+
+.o {
+    font-weight: bold
+}
+
+.cm {
+    color: #998;
+    font-style: italic
+}
+
+.cp {
+    color: #999;
+    font-weight: bold
+}
+
+.c1 {
+    color: #998;
+    font-style: italic
+}
+
+.cs {
+    color: #999;
+    font-weight: bold;
+    font-style: italic
+}
+
+.gd {
+    color: #000
+}
+
+.gd .x {
+    color: #000
+}
+
+.ge {
+    font-style: italic
+}
+
+.gr {
+    color: #a00
+}
+
+.gh {
+    color: #999
+}
+
+.gi {
+    color: #000
+}
+
+.gi .x {
+    color: #000
+}
+
+.go {
+    color: #888
+}
+
+.gp {
+    color: #555
+}
+
+.gs {
+    font-weight: bold
+}
+
+.gu {
+    color: #800080;
+    font-weight: bold
+}
+
+.gt {
+    color: #a00
+}
+
+.kc {
+    font-weight: bold
+}
+
+.kd {
+    font-weight: bold
+}
+
+.kn {
+    font-weight: bold
+}
+
+.kp {
+    font-weight: bold
+}
+
+.kr {
+    font-weight: bold
+}
+
+.kt {
+    color: #458;
+    font-weight: bold
+}
+
+.m {
+    color: #099
+}
+
+.s {
+    color: #d14
+}
+
+.n {
+    color: #333
+}
+
+.na {
+    color: teal
+}
+
+.nb {
+    color: #0086b3
+}
+
+.nc {
+    color: #458;
+    font-weight: bold
+}
+
+.no {
+    color: teal
+}
+
+.ni {
+    color: purple
+}
+
+.ne {
+    color: #900;
+    font-weight: bold
+}
+
+.nf {
+    color: #900;
+    font-weight: bold
+}
+
+.nn {
+    color: #555
+}
+
+.nt {
+    color: navy
+}
+
+.nv {
+    color: teal
+}
+
+.ow {
+    font-weight: bold
+}
+
+.w {
+    color: #bbb
+}
+
+.mf {
+    color: #099
+}
+
+.mh {
+    color: #099
+}
+
+.mi {
+    color: #099
+}
+
+.mo {
+    color: #099
+}
+
+.sb {
+    color: #d14
+}
+
+.sc {
+    color: #d14
+}
+
+.sd {
+    color: #d14
+}
+
+.s2 {
+    color: #d14
+}
+
+.se {
+    color: #d14
+}
+
+.sh {
+    color: #d14
+}
+
+.si {
+    color: #d14
+}
+
+.sx {
+    color: #d14
+}
+
+.sr {
+    color: #009926
+}
+
+.s1 {
+    color: #d14
+}
+
+.ss {
+    color: #990073
+}
+
+.bp {
+    color: #999
+}
+
+.vc {
+    color: teal
+}
+
+.vg {
+    color: teal
+}
+
+.vi {
+    color: teal
+}
+
+.il {
+    color: #099
+}
+
+.gc {
+    color: #999
+}

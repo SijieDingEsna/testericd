@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>close-icon-blk</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons/Font" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="close-icon-blk" stroke-width="8.50000024">
+            <g id="Group-5" transform="translate(31.000000, 29.000000)">
+                <path d="M40.42,0.86 L0.824182181,40.455818" id="Line" stroke="#979797"></path>
+                <path d="M40.42,0.86 L0.824182181,40.455818" id="Line" stroke="#000000"></path>
+                <path d="M1.72,1.72 L41.315818,41.3158178" id="Line" stroke="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

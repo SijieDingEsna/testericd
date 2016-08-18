@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>audio-on-grey</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="audio-on-grey" stroke="#8E8E8E" stroke-width="3.78000017">
+            <g id="Group-7" transform="translate(25.000000, 10.000000)">
+                <path d="M26.8694615,0.515151515 C20.9165319,0.515151515 16.0928313,4.83385544 16.0928313,10.1586023 L16.0928313,43.629385 C16.0928313,48.9541319 20.9165319,53.2728358 26.8694615,53.2728358 C32.8223911,53.2728358 37.6493554,48.9541319 37.6493554,43.629385 L37.6493554,10.1586023 C37.6493554,4.83385544 32.8223911,0.515151515 26.8694615,0.515151515 Z" id="Stroke-1"></path>
+                <g id="Group-39" transform="translate(0.000000, 41.870134)">
+                    <path d="M0,0.757575758 C0,0.757575758 1.44254105,23.9230374 25.9820572,23.9230374 C50.5215734,23.9230374 51.9641144,0.757575758 51.9641144,0.757575758" id="Stroke-3"></path>
+                    <path d="M26.2887349,24.1534416 L26.2887349,34.687108" id="Stroke-5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

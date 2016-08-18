@@ -1,0 +1,80 @@
+<html><head>
+
+    <meta name="viewport" content="width=device-width">
+
+    <!--<link rel="shortcut icon" href="//static.view-api.box.com/images/favicon.ico" type="image/x-icon">-->
+
+    <link rel="stylesheet" href="css/viewer.css">
+    <script language="javascript" src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script language="javascript" src="js/viewer.js"></script>
+    </head>
+<body class="theme-dark ready" cz-shortcut-listen="true">
+<div class="container">
+    <div class="viewer zang-viewer zang-viewer-1 zang-window-as-viewport zang-supports-svg zang-layout-vertical-single-column" data-svg-version="1.0.0">
+        <div tabindex="-1" class="zang-viewport">
+            <div class="zang-doc" >
+                <!--style="width: 906.444px; height: 1161.24px; padding: 8.85199px 13.278px;"-->
+                <!--<div class="zang-page zang-page-visible">-->
+                    <!--<div class="zang-page-inner">-->
+                        <!--<div class="zang-page-content">-->
+                            <!--<div class="zang-page-svg"><iframe></iframe></div>-->
+                            <!--<div class="zang-page-autoscale">-->
+                                <!--<div class="zang-subpx-fix">-->
+
+                                <!--</div>-->
+                                <!--<div class="zang-page-links"></div>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="zang-viewer-logo"></div>
+    </div>
+    <div class="viewer-error">
+        <div class="message">
+            <h2>Error! We couldn’t load the file.</h2>
+            <a href="javascript:location.reload()">Retry?</a>
+        </div>
+    </div>
+    <div class="controls-container">
+        <div class="controls controls-left">
+            <span class="icon logo"></span>
+
+        </div>
+        <div class="controls controls-center page-controls" >
+            <button class="btn scroll-previous-btn" disabled=""><span class="icon"></span></button>
+            <div class="page">
+                <button class="btn page-display">1 / 29</button>
+                <input type="text" pattern="\d*" class="page-input">
+            </div>
+            <button class="btn scroll-next-btn" disabled=""><span class="icon"></span></button>
+        </div>
+        <div class="controls controls-right">
+
+            <button class="btn zoom-out-btn"><span class="icon"></span></button>
+            <button class="btn zoom-in-btn"><span class="icon"></span></button>
+            <button class="btn fullscreen-btn"><span class="icon"></span></button>
+        </div>
+    </div>
+</div>
+<script>
+    var config = {
+        url: 'https://view-api.box.com/1/sessions/45413be2a4b04f9b963770917e651532/assets/',
+        plugins: {}
+    };
+    //
+    config.plugins.realtime = {
+        url: 'https://view-api.box.com/sse/45413be2a4b04f9b963770917e651532'
+    };
+    //
+    //
+    //
+
+    //init(config);
+</script>
+
+
+</body></html>
